@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter;
+using System;
+using System.Linq;
 
 namespace WordCounterTest
 {
@@ -41,7 +43,7 @@ namespace WordCounterTest
     }
 
     [TestMethod] // test 4
-    public void RepeatCount_ReturnCount_3()
+    public void RepeatCount_ReturnCount_2_True()
     {
       string test = "an";
       RepeatCounter newWord = new RepeatCounter(test);
@@ -50,6 +52,21 @@ namespace WordCounterTest
       int result = newWord.RepeatCount();
 
       Assert.AreEqual(2, result);
+    }
+
+    [TestMethod] // test 5
+    public void WordCount_ArrayIs2And2_True()
+    {
+      int[] test = new int[] {2, 2};
+      RepeatCounter newWord1 = new RepeatCounter("an");
+      RepeatCounter.InputWords.Add(newWord1);
+      RepeatCounter newWord2 = new RepeatCounter("na");
+      RepeatCounter.InputWords.Add(newWord2);
+      RepeatCounter.MasterString = "banana";
+
+      int[] result = RepeatCounter.WordCount();
+
+      Assert.AreEqual(true, test.SequenceEqual(result));
     }
 
   }
