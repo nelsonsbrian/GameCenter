@@ -27,5 +27,17 @@ namespace WordCounterTest
 
       Assert.AreEqual(test, result);
     }
+
+    [TestMethod]
+    public void GetInput_IsEqualtoMaster_True()
+    {
+      string test = "tissue";
+      RepeatCounter newWord = new RepeatCounter(test);
+      RepeatCounter.MasterString = "tissue";
+
+      string result = newWord.GetInput();
+
+      Assert.AreEqual(RepeatCounter.MasterString, result);
+    }
   }
 }
