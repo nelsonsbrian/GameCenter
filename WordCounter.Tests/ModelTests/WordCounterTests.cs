@@ -6,7 +6,7 @@ namespace WordCounterTest
   [TestClass]
   public class RepeatCounterTest
   {
-    [TestMethod]
+    [TestMethod] // test 1
     public void Master_ReturnMaster_True()
     {
       string test = "programmingisfun";
@@ -17,7 +17,7 @@ namespace WordCounterTest
       Assert.AreEqual(test, result);
     }
 
-    [TestMethod]
+    [TestMethod] // test 2
     public void Input_ReturnInput_True()
     {
       string test = "fun";
@@ -28,7 +28,7 @@ namespace WordCounterTest
       Assert.AreEqual(test, result);
     }
 
-    [TestMethod]
+    [TestMethod] // test 3
     public void GetInput_IsEqualtoMaster_True()
     {
       string test = "tissue";
@@ -39,5 +39,18 @@ namespace WordCounterTest
 
       Assert.AreEqual(RepeatCounter.MasterString, result);
     }
+
+    [TestMethod] // test 4
+    public void RepeatCount_ReturnCount_3()
+    {
+      string test = "an";
+      RepeatCounter newWord = new RepeatCounter(test);
+      RepeatCounter.MasterString = "banana";
+
+      int result = newWord.RepeatCount();
+
+      Assert.AreEqual(2, result);
+    }
+
   }
 }

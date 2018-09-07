@@ -8,7 +8,7 @@
 
 A simple program that allows a user to input a master string, then enter in a list of words. The program then can return to the user how many times the full word in each item of the list is repeated inside the master string.
 
-### Specs
+### Specs    
 
 Game and GamePlay
 
