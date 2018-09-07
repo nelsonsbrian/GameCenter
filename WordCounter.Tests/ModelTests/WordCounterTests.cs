@@ -16,5 +16,16 @@ namespace WordCounterTest
 
       Assert.AreEqual(test, result);
     }
+
+    [TestMethod]
+    public void Input_ReturnInput_True()
+    {
+      string test = "fun";
+      RepeatCounter newWord = new RepeatCounter("fun");
+
+      string result = newWord.GetInput();
+
+      Assert.AreEqual(test, result);
+    }
   }
 }
