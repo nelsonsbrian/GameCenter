@@ -9,22 +9,14 @@ namespace WordCounter.Models
   {
     public static string MasterString;
     public static List<RepeatCounter> InputWords = new List<RepeatCounter>() {};
-    private string _input;
+
     public RepeatCounter(string input)
     {
-      _input = input;
+      Input = input;
       // InputWords.Add(input);
     }
 
-    public string GetInput()
-    {
-      return _input;
-    }
-
-    public void SetInput(string input)
-    {
-      _input = input;
-    }
+    public string Input { get; set; }
 
     public static int[] WordCount()
     {
@@ -41,9 +33,9 @@ namespace WordCounter.Models
     {
       int count = 0;
       int i = 0;
-      while ((i = MasterString.IndexOf(_input, i)) != -1)
+      while ((i = MasterString.IndexOf(Input, i)) != -1)
       {
-        i += _input.Length;
+        i += Input.Length;
         count++;
       }
       return count;
