@@ -12,9 +12,9 @@ namespace WordCounter.Controllers
       {
         if (String.IsNullOrEmpty(RepeatCounter.MasterString))
         {
-          RepeatCounter.MasterString = "Sample";
+          RepeatCounter.MasterString = "sample";
         }
-        return View();
+        return View("words");
       }
 
       [HttpPost("/words")]

@@ -4,5 +4,34 @@ span.important {
 }
 
 body {
-  background-color: lightgray;
+  background-color: lightgrey;
+}
+
+
+.list > div > p {
+  font-size: 28px;
+}
+
+h4.listHeader {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+  text-align: center;  
+}
+
+.borders {
+  border: 1px black solid;
+  height: 400px;
+  overflow: hidden;
+
+  border-radius: 3px;
+}
+
+.lists {
+    /* height: 400px; */
+    overflow: hidden;
+}
+
+.listItems {
+  text-align: center;
 }
