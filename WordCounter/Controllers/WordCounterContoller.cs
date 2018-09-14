@@ -10,6 +10,10 @@ namespace WordCounter.Controllers
       [HttpGet("/words")]
       public ActionResult Index()
       {
+        if (String.IsNullOrEmpty(RepeatCounter.MasterString))
+        {
+          RepeatCounter.MasterString = "Sample";
+        }
         return View();
       }
 

@@ -6,29 +6,29 @@
   <h1 class="jumbotron">Word Counter Form Menu</h1>
   <div class="row">
     <div class="col-md-6">
-      <h2>Master Word:</h2>
-      <form class="" action="/words" method="post">
-        <label for="new-master">Enter a new master word:</label>
-        <input type="text" name="new-master" id="new-master">
-        <button type="submit" class="btn btn-primary">Replace</button>
-      </form>
-      <br>
-      Current Master Word: <span class="important">@WordCounter.Models.RepeatCounter.MasterString</span>
-    </div>
-    <div class="col-md-6">
       <h2>List of Words:</h2>
       <form class="" action="/words/add" method="post">
         <label for="new-word">Enter a word to add to list:</label>
-        <input type="text" name="new-word" id="new-word">
+        <input type="text" name="new-word" id="new-word" required>
         <button type="submit" class="btn btn-info">AddWord</button>
       </form>
       <br>
       <ul>
         @foreach (@WordCounter.Models.RepeatCounter word in @WordCounter.Models.RepeatCounter.InputWords)
         {
-          <li>@word.Input</li>
+          <li>@word.Input - @word.RepeatCount()</li>
         }
       </ul>
+    </div>
+    <div class="col-md-6">
+      <h2>Master Word:</h2>
+      <form class="" action="/words" method="post">
+        <label for="new-master">Enter a new master word:</label>
+        <input type="text" name="new-master" id="new-master" required>
+        <button type="submit" class="btn btn-primary">Replace</button>
+      </form>
+      <br>
+      Current Master Word: <span class="important">@WordCounter.Models.RepeatCounter.MasterString</span>
     </div>
   </div>
 </div>

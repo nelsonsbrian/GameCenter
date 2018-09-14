@@ -17,6 +17,7 @@ namespace WordCounter.Models
 
     public string Input { get; set; }
 
+    //used for testing the entire list of words
     public static int[] WordCount()
     {
       int[] countArr = new int[InputWords.Count];
@@ -28,6 +29,7 @@ namespace WordCounter.Models
       return countArr;
     }
 
+    //checks a single word for repeats against master word
     public int RepeatCount()
     {
       int count = 0;
