@@ -14,17 +14,17 @@ namespace WordCounter.Controllers
       }
 
       [HttpPost("/words")]
-      public ActionResult Words()
+      public ActionResult AddMaster()
       {
         RepeatCounter.MasterString = Request.Form["new-master"];
         return View("words");
       }
 
       [HttpPost("/words/add")]
-      public ActionResult Words()
+      public ActionResult AddWord()
       {
-        RepeatCounter.MasterString = Request.Form["new-word"];
-        return View("words");
+        RepeatCounter newWord = new RepeatCounter(Request.Form["new-word"]);
+        return View("words", newWord);
       }
 
     }
