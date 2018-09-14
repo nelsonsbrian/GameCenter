@@ -2,13 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>WordCounter</title>
+    <title>Game Center</title>
     <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
     <script src="~/js/scripts.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Game Center</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/words">Word Counter<span class="sr-only"></span></a></li>
+            <li><a href="#">Leap Year</a></li>
+            <li><a href="#">Palindrome Logic</a></li>
+            <li><a href="#"></a>Clock Angle</li>
+            <li><a href="#"></a>Tomagothci</li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     @RenderBody()
   </body>
 </html>
