@@ -35,7 +35,7 @@ namespace WordCounter
             });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("The place you tried to go to, did not work!");
             });
         }
     }

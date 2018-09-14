@@ -25,19 +25,19 @@ namespace WordCounterTest
       string test = "fun";
       RepeatCounter newWord = new RepeatCounter("fun");
 
-      string result = newWord.GetInput();
+      string result = newWord.Input();
 
       Assert.AreEqual(test, result);
     }
 
     [TestMethod] // test 3
-    public void GetInput_IsEqualtoMaster_True()
+    public void Input_IsEqualtoMaster_True()
     {
       string test = "tissue";
       RepeatCounter newWord = new RepeatCounter(test);
       RepeatCounter.MasterString = "tissue";
 
-      string result = newWord.GetInput();
+      string result = newWord.Input();
 
       Assert.AreEqual(RepeatCounter.MasterString, result);
     }
