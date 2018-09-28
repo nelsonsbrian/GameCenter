@@ -9555,11 +9555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brian Nelson\\Desktop\\WordCounter.Solution\\wordcounter\\WordCounter.csproj",
+      "projectUniqueName": "C:\\Users\\Brian Nelson\\Desktop\\GameCenter\\WordCounter\\WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "C:\\Users\\Brian Nelson\\Desktop\\WordCounter.Solution\\wordcounter\\WordCounter.csproj",
+      "projectPath": "C:\\Users\\Brian Nelson\\Desktop\\GameCenter\\WordCounter\\WordCounter.csproj",
       "packagesPath": "C:\\Users\\Brian Nelson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brian Nelson\\Desktop\\WordCounter.Solution\\wordcounter\\obj\\",
+      "outputPath": "C:\\Users\\Brian Nelson\\Desktop\\GameCenter\\WordCounter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Brian Nelson\\AppData\\Roaming\\NuGet\\NuGet.Config",

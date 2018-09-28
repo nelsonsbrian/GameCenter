@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter;
 using System;
 using System.Linq;
+using WordCounter.Models;
 
 namespace WordCounterTest
 {
@@ -25,7 +26,7 @@ namespace WordCounterTest
       string test = "fun";
       RepeatCounter newWord = new RepeatCounter("fun");
 
-      string result = newWord.Input();
+      string result = newWord.Input;
 
       Assert.AreEqual(test, result);
     }
@@ -37,7 +38,7 @@ namespace WordCounterTest
       RepeatCounter newWord = new RepeatCounter(test);
       RepeatCounter.MasterString = "tissue";
 
-      string result = newWord.Input();
+      string result = newWord.Input;
 
       Assert.AreEqual(RepeatCounter.MasterString, result);
     }
