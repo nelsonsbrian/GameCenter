@@ -20,6 +20,19 @@ namespace ToDoList.Tests
 
           //Assert
           Assert.IsInstanceOfType(indexView, typeof(ViewResult));
-      } 
+      }
+
+      [TestMethod]
+      public void Index_HasCorrectModelType_RepeatCounterList()
+      {
+          //Arrange
+          ViewResult indexView = new HomeController().Index() as ViewResult;
+
+          //Act
+          ViewResult result = indexView.ViewData.Model;
+
+          //Assert
+          Assert.IsInstanceOfType(result, typeof(List<RepeatCounter>));
+      }
     }
 }

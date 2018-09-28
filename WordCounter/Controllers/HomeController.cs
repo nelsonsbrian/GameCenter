@@ -17,6 +17,16 @@ namespace WordCounter.Controllers
       // {
       //   return new EmptyResult();
       // }
+
+      // public ActionResult Index()
+      // {
+      //   string test = "tissue";
+      //   List<RepeatCounter> newList = new List<RepeatCounter> {};
+      //   RepeatCounter newWord = new RepeatCounter(test);
+      //   RepeatCounter.MasterString = "tissue";
+      //   newList.Add(newWord);
+      //   return View(newList);
+      }
     }
 
 }
